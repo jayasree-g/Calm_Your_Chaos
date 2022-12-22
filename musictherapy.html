@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="Music.css" />
+
+  <title>Music player</title>
+
+</head>
+
+<body>
+<div class="tag">
+    <h1>Music thraphy</h1>
+    <p>Relax,relife stress,calm with short music thraphy</p>
+    <div class="image">
+<img src="image/undraw_happy_music_g6wc__1_-removebg-preview.png" alt="">
+    </div>
+</div>
+
+
+  <div class="bg-container">
+
+    <img src="" alt="" id="background">
+
+  </div>
+
+  <div class="player-container">
+
+    <!-- Song -->
+
+    <div class="img-container">
+
+      <img src="" alt="" id="cover" class="active">
+
+    </div>
+
+    <h2 id="title"></h2>
+
+    <h3 id="artist"></h3>
+
+    <audio src=""></audio>
+
+    <!-- Progress -->
+
+    <div class="progress-container" id="progress-container">
+
+      <div class="progress" id="progress"></div>
+
+      <div class="duration-wrapper">
+
+        <span id="current-time"></span>
+
+        <span id="duration"></span>
+
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+
+    <div class="player-controls">
+
+      <i class="fas fa-backward" id="prev" title="Previous"></i>
+
+      <i class="fas fa-play main-button" id="play" title="Play"></i>
+
+      <i class="fas fa-forward" id="next" title="Next"></i>
+
+    </div>
+
+    <div class="streak">
+        <div class="info">
+            <h4>5d</h4>
+
+            <p>Current Streak</p>
+        </div>
+        <div class="info">
+            <h4>30 session listned</h4>
+
+            <p>Current Streak</p>
+        </div>
+        <div class="info">
+            <h4>30 minute listned</h4>
+
+            <p>Current Streak</p>
+        </div>
+        <div class="info">
+            <h4>4d</h4>
+
+            <p>Longest streak</p>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="timer">
+
+
+    <h1>Countdown Timer</h1>
+    <div id="container">
+        <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
+        <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+        <button id="start" class="btn">Start</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+    <script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script type="text/javascript" src="music.js"></script>
+
+</body>
+
+</html>
